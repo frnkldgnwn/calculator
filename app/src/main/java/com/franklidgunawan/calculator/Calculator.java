@@ -15,4 +15,9 @@ public class Calculator {
         numState += givenNumber;
         return this.toString();
     }
+
+    public String subtract(int givenNumber) {
+        numState -= givenNumber;
+        return this.toString();
+    }
 }

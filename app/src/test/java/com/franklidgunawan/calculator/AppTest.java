@@ -19,4 +19,11 @@ public class AppTest {
         Calculator calculator = new Calculator();
         assertEquals("3.0", calculator.add(givenNumber));
     }
+
+    @Test
+    public void givenANumberShouldPrintStateAfterSubtraction() {
+        int givenNumber = 10;
+        Calculator calculator = new Calculator();
+        assertEquals("-10.0", calculator.subtract(givenNumber));
+    }
 }
