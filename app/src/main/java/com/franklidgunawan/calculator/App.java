@@ -3,7 +3,33 @@
  */
 package com.franklidgunawan.calculator;
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Calculator calculator = new Calculator();
+        String command;
+
+        while (true) {
+            command = scanner.next();
+
+            if (command.equals("exit")) {
+                break;
+            }
+
+            switch (command) {
+                case "add":
+                    System.out.println(calculator.add(scanner.nextInt()));
+                    scanner.nextLine();
+                    break;
+                case "subtract":
+                    System.out.println(calculator.subtract(scanner.nextInt()));
+                    scanner.nextLine();
+                    break;
+                case "cancel":
+                    break;
+            }
+        }
     }
 }
