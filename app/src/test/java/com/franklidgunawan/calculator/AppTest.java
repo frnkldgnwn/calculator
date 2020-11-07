@@ -4,10 +4,19 @@
 package com.franklidgunawan.calculator;
 
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void givenInitialStateShouldPrintInitialState() {
+    @Test
+    public void givenInitialStateShouldPrintInitialState() {
         assertEquals("0.0", new Calculator().toString());
+    }
+
+    @Test
+    public void givenANumberShouldPrintStateAfterAddition() {
+        int givenNumber = 3;
+        Calculator calculator = new Calculator();
+        assertEquals("3.0", calculator.add(givenNumber));
     }
 }

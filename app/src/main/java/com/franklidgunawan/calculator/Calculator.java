@@ -10,4 +10,9 @@ public class Calculator {
     public String toString() {
         return String.format("%.1f", numState);
     }
+
+    public String add(int givenNumber) {
+        numState += givenNumber;
+        return this.toString();
+    }
 }
