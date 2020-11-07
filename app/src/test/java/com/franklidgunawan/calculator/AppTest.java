@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testInitialStateCalc() {
+    @Test public void givenInitialStateShouldPrintInitialState() {
         assertEquals("0.0", new Calculator().toString());
     }
 }

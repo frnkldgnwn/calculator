@@ -9,8 +9,8 @@ A program that can make simple mathematical operation, like:
 
 ## Dev environment setup
 
-- Java JDK 13
-- Gradle
+- [Java JDK 13](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html)
+- [Gradle](https://gradle.org/install/)
 
 ## Build instructions
 
