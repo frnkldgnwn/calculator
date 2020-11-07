@@ -20,4 +20,9 @@ public class Calculator {
         numState -= givenNumber;
         return this.toString();
     }
+
+    public String clear() {
+        numState = 0;
+        return this.toString();
+    }
 }

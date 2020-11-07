@@ -26,4 +26,12 @@ public class AppTest {
         Calculator calculator = new Calculator();
         assertEquals("-10.0", calculator.subtract(givenNumber));
     }
+
+    @Test
+    public void givenClearCommandShouldPrintStateAfterReset() {
+        Calculator calculator = new Calculator() {{
+            add(10);
+        }};
+        assertEquals("0.0", calculator.clear());
+    }
 }
